@@ -695,31 +695,61 @@ padding-block: var(--section-spacing);
 }
 
 #comments {
+    padding-top: 40px;
+    padding-bottom: 40px;
     
     .comments-flex {
         display: flex;
-        justify-content: center;
+        justify-content: center; /* Centrera elementen */
+       
+
     }
 
+    .headline{
+       margin-right: 210px;
+       margin-top: -50px;
+       max-width: 40ch /* Ändrar hur texten ska ligga*/
+       
+ 
+    }
+    
+
+   
     .review1,
     .review2 {
         position: relative;
+        width: 100%; /* Justera bredden för varje recension */
+        max-width: 350px; /* Ändra maxstorleken på recensionerna */
         
-
-        .quotes {        
-            position: absolute;
-            top: -5%;
-            left: 10px;
-        }
+       
+    }
+    
+    .review1 img,
+    .review2 img {
+        width: 100%; /* Se till att bilderna fyller hela recensionens bredd */
+        height: auto; /* Behåll bildens proportioner */
+        
     }
 
-
+   
+    
+    .quotes {        
+        position: absolute;
+        top: -5%;
+        left: 10px;
+        width: 30px; /* Justera storlek på citattecknen */
+        height: auto;
+    }
 }
 
 
-#faq {
-    padding: 2rem; 
+    
+    
 
+
+#faq {
+    padding: 2rem;
+    
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr; 
@@ -729,6 +759,10 @@ padding-block: var(--section-spacing);
             "sub-image sub-image"; 
         gap: 2rem; /* Mellanrum mellan elementen */
               
+    }
+    h2{
+        margin-top: -3px;
+        max-width: 20ch /* Ändrar hur texten ska ligga*/
     }
 
     .faq-question {
@@ -778,7 +812,7 @@ padding-block: var(--section-spacing);
     .faq-header .headline {
         flex-grow: 1; /* Rubriken tar upp så mycket utrymme som möjligt */
     }
-
+   
     .faq-header .icon-purple{
         width: 50px;
         height: 50px;
@@ -789,9 +823,20 @@ padding-block: var(--section-spacing);
         height: auto;
     }  
 
-    p{
+    .question-p{
+        color: var(--color-gray-700);
+        padding-bottom: 20px;
+        padding-top: 10px;
+        max-width: 43ch /* Ändrar hur texten ska ligga*/
+        
+    }
+
+    
+    .faq-text{
         color: var(--color-gray-700);
         margin: 0 1rem; /* Marginal på vänster och höger sida */
+        
+
     }
 
 
