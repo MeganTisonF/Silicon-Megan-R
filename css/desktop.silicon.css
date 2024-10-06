@@ -792,13 +792,13 @@ p{
     
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: auto auto; /* Anpassa radernas höjd efter innehållet */
+        grid-template-columns: 1fr 1fr;  /* Två kolumner */
+        grid-template-rows: auto auto auto; /* Tre rader */
         grid-template-areas: 
-            "faq-question faq-container"
-            "sub-image sub-image"; 
+            "faq-question faq-container"  /* Första raden: FAQ-frågor och container */
+            "faq-question faq-container"  /* Andra raden: FAQ-frågor och container */
+            "box box"; /* Tredje raden: boxen tar upp hela bredden */
         gap: 2rem; /* Mellanrum mellan elementen */
-              
     }
 
     h2{
@@ -814,6 +814,7 @@ p{
         grid-area: faq-container;
         display: grid;
         gap: 1rem; /* Mellanrum mellan FAQ-boxarna */
+        padding-bottom: 3.5rem;
     }
     
     .sub-image {
@@ -840,6 +841,7 @@ p{
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skugga */
         border-radius: 5px; /* Valfritt: rundade hörn */
         background-color: #fff; 
+        
     }
     
     .faq-header {
@@ -875,6 +877,88 @@ p{
         color: var(--color-gray-700);
         margin: 0 1rem; /* Marginal på vänster och höger sida */
     }
+
+
+
+    .box {
+        grid-area: box;
+        max-width: 100%;
+        width: 1300px;
+        margin: 0 auto;
+        padding-top: 3rem;
+        background-color: #F3F6FF;
+        border: 1px solid #F3F6FF;
+        height: 160px;
+        position: relative; /* För att kunna positionera input-box inuti */
+        border-radius: .5em .5em;
+    }
+
+    .not{
+        position: absolute;
+        width: 110px;
+        top: 10px;
+        left: 190px;
+    }
+    .minih4{
+        position: absolute;
+        top: 10px;
+        left: 300px;
+        max-width: 50ch;
+    }
+
+    .input-group{
+        position: absolute;
+        top: -10px;
+        left: 830px;
+
+    }
+
+    .btn{
+        background-color: #6366F1;
+        color: #fff;
+        padding: .8em 2em;
+        border: 0;
+        font-size: 1rem;
+
+        border-radius: .5em;
+    }
+    
+    .form-input{
+        border: 1px solid #747474;
+        font-size: 1rem;
+        padding: .3em;
+
+        border-radius: .5em;
+    }
+
+    .input-group{
+        display: flex;
+
+        .form-input{
+            border-radius: .5em 0 0 .5em;
+        }
+        
+        .btn{
+            border-radius: 0 .5em .5em 0;
+        }
+    }
+
+    .input-group{
+        position: relative;
+    }
+
+    .icon{
+        position: absolute;
+        top: 50%;
+        left: .5rem;
+
+        transform: translateY(-50%);
+    }
+
+    .email{
+        padding-left: 3rem;
+    }
+  
 }
 
 
