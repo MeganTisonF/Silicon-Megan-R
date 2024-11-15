@@ -1189,53 +1189,55 @@ p{
 
 #mapsection{
 
-    display: flex;
-    padding: 10rem;
-
     
     .container {
-    display: flex;
-    gap: 2rem;
-    max-width: 1400px;
-    margin: 0 auto;
+        display: flex;
+        justify-content: center; /* Centrera elementen */
+        margin-top: 10rem;
+        gap: 10rem;
+        margin-bottom: 20rem;
     }
 
-    /* Left side - image container */
-    .iphone img {
-    flex: 1;
-
+    .mappic{
+        margin-right: 10rem;
     }
 
-    /* Right side - content grid */
-    .map-grid {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    margin-right: 10rem;
+    .mappic img{
+        width: 120%;
+        height: auto;
+        border-radius: 1%;
     }
 
     
-
-    /* Headline styling */
-    .h4 {
-    margin-bottom: 1rem;
+    .map-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
     }
 
-    /* Flex row for icon and text */
+    .h4{
+        margin-bottom: 1rem;
+    }
+    
     .flex {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin-bottom: 1rem;
     }
 
-    /* Icon container */
+    .bold-text {
+        font-weight: bold;
+    }
+    
+
+    
     .icon-container {
     width: 30px;
     flex-shrink: 0;
     }
 
-    /* Text styling */
+   
     .text-m {
     display: flex;
     align-items: center;
