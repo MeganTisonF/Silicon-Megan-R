@@ -654,7 +654,7 @@ p{
 
     }
     .text{
-        max-width: 60ch;/*Antal bokstäver i bredd */
+        max-width: 60ch;
         margin-inline: auto;
     }
     
@@ -762,26 +762,26 @@ p{
    
     .comments-flex {
         display: flex;
-        justify-content: center; /* Centrera elementen */
+        justify-content: center; 
     }
 
     .headline{
        margin-right: 210px;
        margin-top: -50px;
-       max-width: 40ch /* Ändrar hur texten ska ligga*/
+       max-width: 40ch 
     }
     
     .review1,
     .review2 {
         position: relative;
-        width: 100%; /* Justera bredden för varje recension */
-        max-width: 350px; /* Ändra maxstorleken på recensionerna */ 
+        width: 100%; 
+        max-width: 350px; 
     }
     
     .review1 img,
     .review2 img {
-        width: 100%; /* Se till att bilderna fyller hela recensionens bredd */
-        height: auto; /* Behåll bildens proportioner */   
+        width: 100%; 
+        height: auto; 
     }
 
     .quotes {        
@@ -804,7 +804,7 @@ p{
             "faq-question faq-container"  /* Första raden: FAQ-frågor och container */
             "faq-question faq-container"  /* Andra raden: FAQ-frågor och container */
             "box box"; /* Tredje raden: boxen tar upp hela bredden */
-        gap: 2rem; /* Mellanrum mellan elementen */
+        gap: 2rem; 
     }
 
     h2{
@@ -819,7 +819,7 @@ p{
     .faq-container {
         grid-area: faq-container;
         display: grid;
-        gap: 1rem; /* Mellanrum mellan FAQ-boxarna */
+        gap: 1rem; 
         padding-bottom: 3.5rem;
     }
     
@@ -836,15 +836,15 @@ p{
     
     .questions-options {
         display: flex;
-        gap: 1rem; /* Mellanrum mellan ikonerna */
+        gap: 1rem; 
         margin-top: 1rem; 
-        justify-content: flex-start; /* Justerar ikonerna horisontellt till vänster */
+        justify-content: flex-start; 
     }
     
     .faq-section-box {
         padding: 1rem 0; /* Utrymme runt varje FAQ-box */
         border-bottom: 1px solid #ddd; /* Linje mellan posterna */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skugga */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         border-radius: 5px; /* Valfritt: rundade hörn */
         background-color: #fff; 
         
@@ -854,7 +854,7 @@ p{
         display: flex;
         justify-content: space-between; /* Rubrik till vänster och ikon till höger */
         align-items: center; 
-        margin: 0 1rem; /* Marginal på vänster och höger sida */
+        margin: 0 1rem; 
     }
     
     .faq-header .headline {
@@ -979,17 +979,16 @@ p{
 
     .logo,
     .main-menu{
-        margin-right: auto; /* Flyttar resten av innehållet åt vänster */
+        margin-right: auto; 
     }
 
     .navbar {
-        display: flex; /* Sätter navbar-länkarna på en rad */
-        gap: 1.5rem;
+        display: flex; 
     }
 
     .btn-toggle-switch,
     .btn-primary {
-    margin-left: auto; /* Flyttar darkmode och sign in/out-knappen till höger */   
+    margin-left: auto; 
     }
 
     .btn-toggle-switch {
@@ -1007,7 +1006,7 @@ p{
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        margin-left: 10px; /* Om du vill justera avståndet manuellt */
+        margin-left: 10px; 
     }
 
 
@@ -1099,7 +1098,7 @@ p{
 
     .p-extra {
         font-size: 1rem;
-        font-weight: 600; /*Semibold*/
+        font-weight: 600; 
         color: var(--color-primary)
     }
 
@@ -1120,7 +1119,7 @@ p{
         padding: 4rem;
         border: 1px solid var(--color-gray-300);
         border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Justera skuggans utseende här */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     }
 
     
@@ -1130,7 +1129,7 @@ p{
         margin-top: -1rem;
         display: flex;
         gap: 1rem;
-        position: relative; /* Viktigt för att placera knappen absolut i inputen */
+        position: relative; 
     }
 
     .comment-input{
@@ -1150,7 +1149,7 @@ p{
     .btn-round {
         position: absolute;
         top: 50%;
-        right: 0.5rem; /* Placering i förhållande till input-rutan */
+        right: 0.5rem; 
         top: 1.2rem;
         transform: translateY(-50%);
         background-color: transparent; /* Gör bakgrunden helt transparent */
@@ -1192,7 +1191,8 @@ p{
     
     .container {
         display: flex;
-        justify-content: center; /* Centrera elementen */
+        justify-content: center; 
+        align-items: center; /* Vertikal centrering */
         margin-top: 10rem;
         gap: 10rem;
         margin-bottom: 20rem;
@@ -1203,16 +1203,17 @@ p{
     }
 
     .mappic img{
-        width: 120%;
+        width: 110%;
         height: auto;
         border-radius: 1%;
     }
 
     
     .map-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
+        margin-top: -2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .h4{
@@ -1220,10 +1221,10 @@ p{
     }
     
     .flex {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .bold-text {
@@ -1233,16 +1234,20 @@ p{
 
     
     .icon-container {
-    width: 30px;
-    flex-shrink: 0;
+        width: 30px;
+        flex-shrink: 0;
     }
 
    
     .text-m {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    color: var(--color-gray-700);
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        color: var(--color-gray-700);
+    }
+
+    .icon-cards{
+        padding-top: 2rem;
     }
         
  
